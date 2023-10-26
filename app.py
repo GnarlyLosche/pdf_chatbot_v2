@@ -51,8 +51,8 @@ def main():
     if user_question:
         handle_userinput(user_question)
 
-    st.write(user_template.replace("{{MSG}}", "Hello master, can you help me?"), unsafe_allow_html=True)
-    st.write(bot_template.replace("{{MSG}}", "Hello welp, we shall see..."), unsafe_allow_html=True)
+    st.write(user_template.replace("{{MSG}}", "Ask the chatbot any question about your document."), unsafe_allow_html=True)
+    st.write(bot_template.replace("{{MSG}}", "Hello, what document do you need to review?"), unsafe_allow_html=True)
 
     with st.sidebar:
         st.subheader("your documents")
