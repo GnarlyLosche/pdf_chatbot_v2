@@ -33,7 +33,7 @@ def main():
 
     load_dotenv()
 
-    st.set_page_config(page_title='Analyze Multiple PDFs',page_icon="/Users/charlielosche/Documents/Docs/Coding/python_pdf_chat/assets/DALL·E 2023-10-18 19.51.23 - Sourcer_Icon.png")
+    st.set_page_config(page_title='Analyze Multiple PDFs', layout='wide', page_icon="/Users/charlielosche/Documents/Frisson Systems/Marketing:Branding/Logos/Frisson Systems - Green logo.png")
 
     st.write(css, unsafe_allow_html=True)
     
@@ -44,7 +44,7 @@ def main():
     if "chat_history" not in st.session_state:
         st.session_state.chat_history = None
 
-    st.image("/Users/charlielosche/Documents/Docs/Coding/python_pdf_chat/assets/DALL·E 2023-10-18 19.51.23 - Sourcer_Logo.png")
+    st.image("/Users/charlielosche/Documents/Frisson Systems/Marketing:Branding/Logos/Frisson Systems - Green.png")
     st.header("Analyze Multiple PDFs :books:")
 
     user_question = st.text_input("Ask a question about your documents")

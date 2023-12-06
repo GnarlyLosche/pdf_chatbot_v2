@@ -4,31 +4,32 @@ css = '''
     padding: 1.5rem; border-radius: 0.5rem; margin-bottom: 1rem; display: flex
 }
 .chat-message.user {
-    background-color: #2b313e
+    background-color: #298175
 }
 .chat-message.bot {
-    background-color: #475063
+    background-color: #298175
 }
 .chat-message .avatar {
-  width: 20%;
+  width: 10%;
 }
 .chat-message .avatar img {
   max-width: 78px;
   max-height: 78px;
-  border-radius: 50%;
+  border-radius: 30%;
   object-fit: cover;
 }
 .chat-message .message {
-  width: 80%;
+  width: 90%;
   padding: 0 1.5rem;
   color: #fff;
+  font-size: 26px;
 }
 '''
 
 bot_template = '''
 <div class="chat-message bot">
     <div class="avatar">
-        <img src="https://i.ibb.co/DG0V806/IMG-7268.jpg" style="max-height: 78px; max-width: 78px; border-radius: 50%; object-fit: cover;">
+        <img src="https://i.ibb.co/yVLScrp/Frisson-Systems-Green-logo.png" style="max-height: 78px; max-width: 78px; border-radius: 50%; object-fit: cover;">
     </div>
     <div class="message">{{MSG}}</div>
 </div>
@@ -37,7 +38,7 @@ bot_template = '''
 user_template = '''
 <div class="chat-message user">
     <div class="avatar">
-        <img src="https://i.ibb.co/tzvVtPM/charlie-headshot-png.jpg">
+        <img src="https://i.ibb.co/RYDqXSq/Screenshot-2023-11-29-at-9-16-46-AM.png">
     </div>    
     <div class="message">{{MSG}}</div>
 </div>
